@@ -1,11 +1,7 @@
 # FCx Labs Test Automation
 
----
-
 ## 📌 Sobre o Desafio
 Este repositório contém os cenários de teste escritos em Gherkin e a automação do fluxo de checkout do e-commerce *Advantage Online Shopping*.
-
----
 
 ## 📋 Pré-requisitos
 
@@ -25,10 +21,8 @@ Este repositório contém os cenários de teste escritos em Gherkin e a automaç
     - Se não estiver instalado, veja [como instalar o Maven](https://maven.apache.org/install.html).
 
 3. **Google Chrome e WebDriver compatível**:
-    - Baixe a versão do ChromeDriver correspondente à sua versão do Chrome em [ChromeDriver](https://chromedriver.chromium.org/downloads).
+    - Baixe a versão do ChromeDriver correspondente à sua versão do Chrome em [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/).
     - Adicione o WebDriver ao PATH do sistema.
-
----
 
 ## 👨‍💻 Como instalar e rodar o projeto
 
@@ -48,8 +42,6 @@ Este repositório contém os cenários de teste escritos em Gherkin e a automaç
       target/cucumber-reports/
       ```
 
----
-
 ## 📝 Cenários de Teste
 
 Os arquivos `.feature` estão na pasta `/src/test/resources/features/`, cobrindo casos como:
@@ -66,15 +58,13 @@ src/test/resources/cenários-de-testes-em-Gherkin/
 ```
 Além disso, o arquivo `QA_Challenge_Ecommerce_Test_Scenarios.pdf` contém a descrição completa dos cenários propostos.
 
----
 
 ## 🤖 Automação
 
 Este projeto utiliza **Cucumber** para definir cenários de teste em linguagem natural (Gherkin) e **Selenium WebDriver** para automatizar a interação com o navegador. Abaixo estão os detalhes sobre como a automação foi implementada e como você pode configurá-la.
 
----
 
-### **Configuração da Automação**
+### ⚙️ **Configuração da Automação**
 
 1. **ChromeDriver**:
     - O ChromeDriver é necessário para executar os testes no navegador Chrome.
@@ -90,9 +80,8 @@ Este projeto utiliza **Cucumber** para definir cenários de teste em linguagem n
         - Selenium WebDriver
         - Cucumber
         - JUnit
----
 
-### **Fluxo de Execução**
+### 🌊 **Fluxo de Execução**
 
 1. **Inicialização**:
     - O `Hooks.java` configura o WebDriver antes de cada teste e o encerra após a execução.
@@ -106,9 +95,9 @@ Este projeto utiliza **Cucumber** para definir cenários de teste em linguagem n
 4. **Validações**:
     - As validações são feitas utilizando assertions do JUnit para garantir que o comportamento esperado foi alcançado.
 
----
 
-### **Exemplo de Cenário**
+
+## 📑 Cenário de Checkout
 
 Cenário descrito no arquivo `checkout.feature`:
 
@@ -128,8 +117,6 @@ Feature: Checkout Process
       | JohnDoe   | john.doe@example.com | #Root@123 | John       | Doe       | 1234567890   | Brazil  | Olinda | 123 Main Street | PE    | 53080000    | JohnDoe         | #Root@123       |
 
 ```
-
----
 
 ## 📁 Estrutura do Projeto
 
